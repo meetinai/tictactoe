@@ -8,7 +8,7 @@ interface BoardProps {
 
 const Board: React.FC<BoardProps> = ({ cells, onClick }) => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center w-60">
       {cells.map((value, index) => (
         <Cell key={index} value={value} onClick={() => onClick(index)} />
       ))}
