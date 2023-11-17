@@ -51,7 +51,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold text-blue-600">Tic Tac Toe</h1>
+      <h1 className="text-4xl font-bold text-blue-600">Tic Tac Toe Game</h1>
       <Scoreboard scores={scores} />
       <Board cells={cells} onClick={handleClick} />
       <ResetButton onClick={resetGame} />
